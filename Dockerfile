@@ -11,5 +11,5 @@ COPY  . .
 RUN npm run build
 
 FROM nginx
-
+EXPOSE 80
 COPY --from=0 /wls/build /usr/share/nginx/html
